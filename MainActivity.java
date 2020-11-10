@@ -78,4 +78,24 @@ public class MainActivity extends AppCompatActivity {
             break;
     }
 }
+    
+    public void equalEvent(View view) {
+        String newNumber = ed1.getText().toString();
+        double result = 0.0;
+        switch (op) {
+            case "+":
+                result = Double.parseDouble(oldNumber) + Double.parseDouble(newNumber);
+                break;
+            case "-":
+                result = Double.parseDouble(oldNumber) - Double.parseDouble(newNumber);
+                break;
+            case "/":
+                result = Double.parseDouble(oldNumber) / Double.parseDouble(newNumber);
+                break;
+            case "*":
+                result = Double.parseDouble(oldNumber) * Double.parseDouble(newNumber);
+                break;
+        }
+        ed1.setText(result+"");
+    }
 
