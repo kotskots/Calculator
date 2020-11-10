@@ -59,5 +59,23 @@ public class MainActivity extends AppCompatActivity {
         }
         ed1.setText(number);
     }
+    
+    public void opperatorEvent(View view) {
+    isNewOp = true;
+    oldNumber = ed1.getText().toString();
+    switch (view.getId()){
+        case R.id.button_plus:
+            op = "+";
+            break;
+        case R.id.button_minus:
+            op = "-";
+            break;
+        case R.id.button_multi:
+            op = "*";
+            break;
+        case R.id.button_div:
+            op = "/";
+            break;
+    }
 }
 
