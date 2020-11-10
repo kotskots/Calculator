@@ -7,6 +7,16 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_weight="1"
+        android:gravity="right|center"
+        android:textSize="40pt"
+        android:layout_marginBottom="1pt"
+        android:inputType="textPersonName"
+        android:text="0" />
 
 </LinearLayout>
