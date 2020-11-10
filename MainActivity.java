@@ -98,4 +98,9 @@ public class MainActivity extends AppCompatActivity {
         }
         ed1.setText(result+"");
     }
-
+    
+ public void clearEvent(View view) {
+        ed1.setText("0");
+        isNewOp = true;
+    }
+}
